@@ -21,6 +21,17 @@
 
 module.exports.connections = {
 
+  postgresDev: {
+    adapter: 'sails-postgresql',
+    database: 'prsn',
+    host: 'localhost',
+    password: '',
+    pool: false,
+    port: 5432,
+    user: 'prsn-user',
+    ssl: false
+  },
+
   /***************************************************************************
   *                                                                          *
   * Local disk storage for DEVELOPMENT ONLY                                  *
