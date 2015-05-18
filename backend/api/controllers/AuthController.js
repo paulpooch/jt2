@@ -29,6 +29,24 @@ module.exports = {
   logout: function(req, res) {
     req.logout();
     res.redirect('/');
+  },
+
+  signup: function(req, res) {
+    var email = req.body.inputEmail;
+    var password = req.body.inputPassword;
+    var username = email.split('@')[0];
+    var attrs = {
+      email: email,
+      password: password,
+      username: username
+    };
+    User.create(attrs)
+    .then(function(user) {
+      res.json({ todo: 'implement signup' });
+    })
+    .catch(function(err){
+      res.status(err.status).json({ error: err.summary });
+    });
   }
 
 };
