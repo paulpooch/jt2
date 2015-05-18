@@ -1,2 +1,8 @@
 # prsn
 A fullstack app skeleton for web &amp; mobile apps. PostgreSQL, REST, React, React-Native, Realm, Sails.js, &amp; Node.
+
+# References
+https://github.com/sails101/using-passport
+http://miscposts1.blogspot.com/2014/09/sailsjs-user-authentication.html
+http://iliketomatoes.com/implement-passport-js-authentication-with-sails-js-0-10-2/
+
