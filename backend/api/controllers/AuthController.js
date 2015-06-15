@@ -40,7 +40,11 @@ module.exports = {
 
   logout: function(req, res) {
     req.logout();
-    res.redirect('/');
+    req.session.destroy(function (err) {
+      return res.send({
+        message: 'Logout successful.'
+      });
+    });
   },
 
   signup: function(req, res) {
@@ -54,10 +58,14 @@ module.exports = {
     };
     User.create(attrs)
     .then(function(user) {
-      res.json({ todo: 'implement signup' });
+      return res.json({
+        user: user
+      });
     })
-    .catch(function(err){
-      res.status(err.status).json({ error: err.summary });
+    .catch(function(err) {
+      return res.serverError({
+        error: err
+      });
     });
   }
 

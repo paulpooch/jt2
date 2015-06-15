@@ -20,7 +20,11 @@ module.exports = function serverError (data, options) {
   var sails = req._sails;
 
   // Set status code
-  res.status(500);
+  if (data && data.error && data.error.status) {
+    res.status(data.error.status);
+  } else {
+    res.status(500);
+  }
 
   // Log error to console
   if (data !== undefined) {
