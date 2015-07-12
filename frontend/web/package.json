@@ -1,7 +1,7 @@
 {
   "name": "juicytracks-web",
   "version": "0.0.0",
-  "description": "",
+  "description": "The web frontend for JuicyTracks.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,10 +14,13 @@
   },
   "dependencies": {
     "alt": "^0.17.1",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "webpack-sails.io.js": "^0.1.0"
   },
   "devDependencies": {
-    "node-libs-browser": "^0.5.2",
-    "webpack": "^1.10.1"
+    "webpack": "^1.10.1",
+    "babel-core": "^5.6.18",
+    "babel-loader": "^5.3.1",
+    "file-loader": "^0.8.4"
   }
 }
