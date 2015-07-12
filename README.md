@@ -1,5 +1,9 @@
 # JuicyTracks
 
+## TODO
+Waterlock (http://waterlock.ninja/) based JWT auth.
+Working on https://auth0.com/blog/2015/04/09/adding-authentication-to-your-react-flux-app/.
+
 ## Backend
 Sails.js
 

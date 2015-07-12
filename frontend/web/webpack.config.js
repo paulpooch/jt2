@@ -1,7 +1,7 @@
 module.exports = {
   debug: true,
   entry: {
-    app: "./app.es6"
+    app: "./alt.js"
   },
   output: {
     path: "../../backend/.tmp/public/js/",
@@ -10,7 +10,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.jsx$|\.es6$/,
+        test: /\.jsx?$|\.es6$/,
         exclude: /(node_modules)/,
         loader: 'babel'
       }, {
