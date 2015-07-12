@@ -1,5 +1,17 @@
-# prsn
-A fullstack app skeleton for web &amp; mobile apps. PostgreSQL, REST, React, React-Native, Realm, Sails.js, &amp; Node.
+# JuicyTracks
+
+## Backend
+Sails.js
+PostgreSQL
+
+## Mobile
+react-native
+realm
+
+## Web
+react
+alt
+react-router
 
 # References
 
