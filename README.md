@@ -2,15 +2,19 @@
 
 ## Backend
 Sails.js
+
 PostgreSQL
 
 ## Mobile
 react-native
+
 realm
 
 ## Web
 react
+
 alt
+
 react-router
 
 # References
