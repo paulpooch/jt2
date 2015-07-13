@@ -8,6 +8,6 @@ import routes from './routes';
 
 const alt = new Alt();
 
-Router.run(routes, function(Root) {
-  React.render(<Root />, document.getElementById('content'));
+Router.run(routes, Router.HistoryLocation, (Root) => {
+  React.render(<Root />, document.getElementById('reactRoot'));
 });
