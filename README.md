@@ -48,3 +48,15 @@ pg_ctl -D /usr/local/var/postgres/data -l logfile start
 // stop db
 pg_ctl -D /usr/local/var/postgres/data -l logfile stop
 ```
+
+# Error Handling
+
+1. The server will return all errors with:
+- An appropriate HTTP respknse code.
+- A json object containing a string error:
+```
+{
+  error: 'This is the error description.'
+}
+
+2. All

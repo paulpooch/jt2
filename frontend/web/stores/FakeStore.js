@@ -1,6 +1,5 @@
-var alt = require('../alt');
-var FakeActions = require('../actions/FakeActions');
-
+import alt from '../alt';
+import FakeActions from '../actions/FakeActions';
 class FakeStore {
 
   constructor() {
@@ -13,6 +12,6 @@ class FakeStore {
   handleUpdateLocations(locations) {
     this.locations = locations;
   }
-}
 
+}
 export default alt.createStore(FakeStore, 'LocationStore');

@@ -14,9 +14,10 @@
   },
   "dependencies": {
     "alt": "^0.17.1",
+    "radium": "^0.13.4",
     "react": "^0.13.3",
-    "webpack-sails.io.js": "^0.1.0",
-    "react-router": "^0.13.3"
+    "react-router": "^0.13.3",
+    "webpack-sails.io.js": "^0.1.0"
   },
   "devDependencies": {
     "webpack": "^1.10.1",

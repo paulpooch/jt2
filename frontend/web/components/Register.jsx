@@ -3,7 +3,7 @@ import React from 'react';
 import api from '../../shared/api';
 import styles from '../../shared/styles';
 import LoginRegisterBase from './LoginRegisterBase.jsx';
-class Login extends LoginRegisterBase {
+class Register extends LoginRegisterBase {
 
   handleSubmit(e) {
     e.preventDefault();
@@ -14,11 +14,11 @@ class Login extends LoginRegisterBase {
       inputEmail:     this.state.inputEmail,
       inputPassword:  this.state.inputPassword
     };
-    api.submitLogin(postData, this)
+    api.submitRegister(postData, this)
     .then((json) => {
       console.log(json);
     });
   }
 
 }
-export default Radium(Login)
+export default Radium(Register)

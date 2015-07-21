@@ -1,27 +1,23 @@
+import Radium from 'radium';
 import React from 'react';
 import { Link, RouteHandler } from 'react-router';
+import styles from '../../shared/styles';
+class App extends React.Component {
 
-const STYLE = {
-  navRoot: {
-    display: 'flex'
-  },
-  navItem: {
-    flex: 1
-  }
-};
-
-export default class App extends React.Component {
   render() {
     console.log('render App');
     return (
       <div>
 
-        <div style={ STYLE.navRoot }>
-          <div style={ STYLE.navItem }>
+        <div styles={[ styles.flextainer ]}>
+          <div styles={[ styles.flex1 ]}>
             <h1>JuicyTracks</h1>
           </div>
-          <div style={ STYLE.navItem }>
+          <div styles={[ styles.flex1 ]}>
             <Link to="login" params={{ foo: 123 }} >Login</Link>
+          </div>
+          <div styles={[ styles.flex1 ]}>
+            <Link to="register">Sign Up</Link>
           </div>
         </div>
 
@@ -29,6 +25,6 @@ export default class App extends React.Component {
       </div>
     );
   }
-}
 
-React
+}
+export default Radium(App)

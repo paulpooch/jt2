@@ -40,6 +40,10 @@ module.exports.routes = {
     view: 'reactApp'
   },
 
+  '/signup': {
+    view: 'reactApp'
+  },
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
